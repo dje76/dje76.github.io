@@ -1,0 +1,9 @@
+TODO:
+
+###get a better photo for the background
+
+###fix the join IEEE steps
+
+##fix mobile buttons to be even
+
+#scroll through the pics and have a drop down with a blurb about officers
