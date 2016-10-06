@@ -1,1 +1,0 @@
-This is the code repo for the mississippi state IEEE student branch website.
