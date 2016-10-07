@@ -2,6 +2,7 @@ body{
 	background-image: url(../img/header.png);
 	background-attachment: fixed;
 	background-size: cover;
+	background-repeat: no-repeat;
 	background-position: center;
 }
 
@@ -131,4 +132,22 @@ a, a:hover, a:focus{
 
 .portfolio-box .portfolio-box-caption{
 	background: rgba(204, 204, 204,.7);
+}
+
+.bgimg-1, .bgimg-2 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url(../img/header.png);
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url(../img/header1.jpg);
+  min-height: 400px;
 }

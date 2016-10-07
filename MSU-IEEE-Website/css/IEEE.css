@@ -96,8 +96,14 @@ a, a:hover, a:focus{
 }
 
 #join{
-	background-color: rgba(117, 120, 123,.5);
 	color: white;
+	position: relative;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(../img/header2.jpg);
+	min-height: 400px;
 }
 
 #officers{
