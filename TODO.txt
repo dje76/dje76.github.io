@@ -1,7 +1,5 @@
 TODO:
 
-#change website to slide format
-
 #add content
 
 #write about section

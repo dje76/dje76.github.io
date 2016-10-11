@@ -1,0 +1,24 @@
+hr{
+	border-color: #660000;
+}
+
+/*Events section styling*/
+.heading{
+	padding-top: 100px;
+}
+
+.poster{
+	width: 400px;
+	height: 600px;
+}
+
+/*officers pics styling*/
+.pics{
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+.officer{
+	width: 180px;
+	height: 225px;
+}
