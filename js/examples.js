@@ -9,6 +9,10 @@ $(document).ready(function(){
     });
 	sr.reveal('.bar', {
         duration: 2000,
-        delay: 50
+        delay: 1000
+    });
+	sr.reveal('.see', {
+        duration: 2000,
+        delay: 2000
     });
 });

@@ -21,8 +21,37 @@
 
     <!-- Themes CSS -->
     <link href="css/creative.css" rel="stylesheet">
-	<link href="css/IEEE.css" rel="stylesheet">
+	<link href="css/Daniel.css" rel="stylesheet">
 	<link href="css/bootstrap-social.css" rel="stylesheet" >
+	<style>
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	.section{
+		background-size: cover;
+	}
+	.slide{
+		background-size: cover;
+	}
+
+	/* Defining each section background and styles
+	* --------------------------------------- */
+	#section0{
+		background-image: url(img/background4.png);
+		padding: 0 0 0 0;
+	}
+	#section1{
+		background-image: url(img/background1.jpg);
+		padding: 0 0 0 0;
+	}
+	#section2{
+		background-image: url(img/background2.jpg);
+		padding: 0 0 0 0;
+	}
+	#section3{
+		background-image: url(img/background3.jpg);
+		padding: 0 0 0 0;
+	}
+	</style>
 
 </head>
 <body>
@@ -34,20 +63,104 @@
 </ul>
 
 <div id="fullpage">
-	<div class="section " id="section0">
-		<h1 class="foo">Daniel Eads</h1>
-		<p>Software Engineer</p>
+	<div class="section intro" id="section0">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 text-center">
+				<h1>Daniel Eads</h1>
+				<hr>
+				<h2 class="foo">Developer</p>
+				<h2 class="bar">Creator</p>
+				<h2 class="see">Software Engineer</p>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="section" id="section1">
 		<div class="intro">
-			<h1 class="bar">About Daniel</h1>
-			<p>I code stuff and build software products</p>
+		<div class="container">
+			<div class="row">
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+					<h1>About Daniel</h1>
+					<p>I am a Mississippi State University student in Software Engineering. I am proficient in C#, Java, JavaScript, and C++/C. I enjoy front end development and any kind of UX development. When I’m not coding, I like to play the banjo, basketball, and board games.</p>
+				</div>
+				<div class="col-lg-3 col-lg-offset-1 text-center">
+					<img class="me" src="img/me.jpg"/>
+				</div>
+			</div>
+		</div>
 		</div>
 	</div>
 	<div class="section" id="section2">
 		<div class="intro">
-			<h1>Projects</h1>
-			<p>Some of the projects I have worked on in the past</p>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 text-center">
+						<h1>Projects</h1>
+						<p>Some of the projects I have worked on in the past</p>
+						<hr>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 text-center">
+						<a class="portfolio-box" href="https://dje76.github.io/MSU-IEEE-Website/">
+							<img class="img-responsive projects" src="img/project1.png"/>
+							<div class="portfolio-box-caption">
+								<div class="portfolio-box-caption-content">
+									<div class="project-category text-faded">
+										As IEEE Webmaster
+									</div>
+									<div class="project-name">
+										MSU IEEE Website
+									</div>
+									<hr class="dark">
+									<div class="text-faded">
+										other stuff
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-4 text-center">
+						<a class="portfolio-box" href="162.243.56.228">
+							<img class="img-responsive projects" src="img/project2.png"/>
+							<div class="portfolio-box-caption">
+								<div class="portfolio-box-caption-content">
+									<div class="project-category text-faded">
+										Senior Project
+									</div>
+									<div class="project-name">
+										Care Ministries Website
+									</div>
+									<hr class="dark">
+									<div class="text-faded">
+										other stuff
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-4 text-center">
+						<a class="portfolio-box" href="https://dje76.github.io/MSU-IEEE-Website/">
+							<img class="img-responsive projects" src="img/project1.png"/>
+							<div class="portfolio-box-caption">
+								<div class="portfolio-box-caption-content">
+									<div class="project-category text-faded">
+										dddd
+									</div>
+									<div class="project-name">
+										MSU IEEE Website
+									</div>
+									<hr class="dark">
+									<div class="text-faded">
+										other stuff
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="section" id="section3">
@@ -56,20 +169,26 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Contact Information</h2>
-                    <hr class="primary">
-                    <p>Visit us on our social media pages or contact us through email.</p>
-                </div>
-                <div class="col-lg-2 col-lg-offset-3 text-center sr-contact">
-                    <a class="btn btn-social-icon btn-lg btn-facebook" href="https://www.facebook.com/IEEE-Mississippi-State-University-156335091812/?fref=ts"><i class="fa fa-facebook"></i></a>
+                    <hr class="dark">
+                    <p>Visit me on my social media pages or contact me through email.</p>
                 </div>
 				
-                <div class="col-lg-2 text-center sr-contact">
-                    <div><a href="mailto::ieee@ece.msstate.edu"><i class="fa fa-envelope-o fa-3x"></i></a></div>
-					<div><a href="mailto::ieee@ece.msstate.edu" class="text-center">ieee@ece.msstate.edu</a></div>
+				<div class="col-lg-2 col-lg-offset-3 text-center sr-contact">
+                    <a class="btn btn-social-icon btn-lg btn-linkedin" href="https://www.linkedin.com/in/daniel-eads-142009127"><i class="fa fa-linkedin"></i></a>
                 </div>
 				
 				<div class="col-lg-2 text-center sr-contact">
-                    <a class="btn btn-social-icon btn-lg btn-twitter" href="https://twitter.com/MSU_IEEE?lang=en"><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-lg btn-twitter" href="https://twitter.com/StoobieOrNot2B"><i class="fa fa-twitter"></i></a>
+                </div>
+				
+				<div class="col-lg-2 text-center sr-contact">
+                    <a class="btn btn-social-icon btn-lg btn-github" href="https://github.com/dje76"><i class="fa fa-github"></i></a>
+                </div>
+            </div>
+			<div class="row">
+				<div class="col-lg-2 col-lg-offset-5 text-center sr-contact">
+                    <div><a href="mailto::danieljameseads@gmail.com"><i class="fa fa-envelope-o fa-3x"></i></a></div>
+					<div><a href="mailto::danieljameseads@gmail.com" class="text-center">danieljameseads@gmail.com</a></div>
                 </div>
             </div>
         </div>
@@ -90,7 +209,7 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-			  sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke'],
+			  sectionsColor: ['#FFFFFF', '#FFFFFF', '#000000', '#FFFFFF'],
 			  anchors: ['Home', 'About', 'Projects', 'Contact'],
 			  menu: '#menu',
 			  continuousVertical: true,
