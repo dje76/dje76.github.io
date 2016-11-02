@@ -86,22 +86,6 @@ hr{
 	height: 400px;
 	width: 300px;
 }
-
-/* Backgrounds will cover all the section
-* --------------------------------------- */
-.section{
-	background-size: cover;
-}
-.slide{
-	background-size: cover;
-}
-
-/* Defining each section background and styles
-* --------------------------------------- */
-#section3{
-	background-image: url(img/background3.jpg);
-	padding: 6% 0 0 0;
-}
 	
 .intro{
 	color: #FFB800;
