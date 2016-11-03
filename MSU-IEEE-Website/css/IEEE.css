@@ -544,3 +544,12 @@ a, a:hover, a:focus{
 .portfolio-box .portfolio-box-caption{
 	background: rgba(204, 204, 204,.7);
 }
+
+.submit{
+	width: 100px;
+	height: 45px;
+}
+
+.forms{
+	text-align:left;
+}

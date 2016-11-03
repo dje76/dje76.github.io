@@ -85,6 +85,7 @@ hr{
 	border-radius: 5%;
 	height: 400px;
 	width: 300px;
+	margin: 0 auto;
 }
 	
 .intro{
@@ -109,10 +110,15 @@ hr{
 	margin: 0 auto;
 }
 
-.foo .bar .see{
-	margin-top: 20px
-}
-
 .dark{
 	border-color: #000000;
+}
+
+a{
+	color: #670404;
+}
+
+a:focus, a:hover {
+    color: #360000;
+    text-decoration: underline;
 }
