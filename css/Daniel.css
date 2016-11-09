@@ -122,3 +122,26 @@ a:focus, a:hover {
     color: #360000;
     text-decoration: underline;
 }
+
+#menu li {
+	background: rgba(255,184,0,0.5);
+}
+
+#menu li:hover {
+    background: rgba(255,184,0,0.8);
+	color: white;
+}
+
+#menu li a{
+	color: black;
+}
+
+#menu li.active {
+    background: rgba(153, 110, 0, 0.8);
+    color: #fff;
+}
+
+#menu li.active:hover {
+    background: rgba(255,184,0,0.9);
+    color: #fff;
+}

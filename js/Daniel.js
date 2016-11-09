@@ -14,6 +14,7 @@ $(document).ready(function() {
 		menu: '#menu',
 		continuousVertical: true,
 		responsiveWidth: 900,
+		responsiveHeight: 500,
 		navigation: true,
 		navigationPosition: 'right',
 		navigationTooltips: ['Home', 'About', 'Projects', 'Contact'],
