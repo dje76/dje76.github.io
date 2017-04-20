@@ -7,7 +7,7 @@ body {
 body {
 	font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 	webkit-tap-highlight-color: #222222;
-	background-image: url(../img/header.png);
+	background-image: url(../img/header.jpg);
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
@@ -402,6 +402,11 @@ fieldset[disabled] .btn-primary.active {
   text-shadow: none;
   background: #222222;
 }
+
+img {
+    image-orientation: from-image;
+}
+
 img::selection {
   color: white;
   background: transparent;
@@ -461,18 +466,6 @@ header .header-content .header-content-inner p{
 	width: 120px;
 }
 
-#leftButton{
-	margin-left: 51px;
-}
-
-#middleButton{
-	margin-left: 11px;
-}
-
-#rightButton{
-	margin-left: -29px;
-}
-
 .btn:hover{
 	background-color: #f2f2f2;
 	color: #660000;
@@ -508,7 +501,7 @@ a, a:hover, a:focus{
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-image: url(../img/header2.jpg);
+	background-image: url(../img/header4.jpg);
 	min-height: 400px;
 }
 
@@ -537,12 +530,13 @@ a, a:hover, a:focus{
 }
 
 .officer{
-	width: 180px;
-	height: 225px;
+	width: 166px;
+	height: 250px;
+	image-orientation: from-image;
 }
 
 .portfolio-box .portfolio-box-caption{
-	background: rgba(204, 204, 204,.7);
+	background: rgba(204, 204, 204,.8);
 }
 
 .submit{
@@ -552,4 +546,14 @@ a, a:hover, a:focus{
 
 .forms{
 	text-align:left;
+}
+
+.lightlink{
+	text-decoration: underline;
+	color: white;
+}
+
+.lightlink:hover, .lightlink:focus{
+	text-decoration: underline;
+	color: #009FDA;
 }
