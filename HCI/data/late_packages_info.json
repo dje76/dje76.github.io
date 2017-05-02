@@ -1,0 +1,19 @@
+{
+  "couriers_on_time_today":80,
+  "packages_on_time_today":95,
+  "exceptions_today":10,
+  "delays_today":"Moderate",
+
+  "couriers_on_time_week":90,
+  "packages_on_time_week":95,
+  "exceptions_week":5,
+  "delays_week":"Minimal",
+
+  "packages_late_1":98,
+  "packages_late_2":111,
+  "packages_late_3":133,
+  "packages_late_4":145,
+  "packages_late_5":176,
+  "packages_late_6":70,
+  "packages_late_7":74,
+}

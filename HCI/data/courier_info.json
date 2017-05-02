@@ -1,0 +1,153 @@
+{
+  "exception_no_1":74,
+  "exception_no_2":40,
+  "exception_no_3":37,
+  "exception_no_4":30,
+  "exception_no_5":20,
+  "exception_no_6":20,
+  "exception_no_7":10,
+  "exception_no_8":5,
+
+  "exception_1":"Late Package",
+  "exception_2":"Unable To Collect Payment",
+  "exception_3":"Package Sorted To Wrong Route",
+  "exception_4":"Bussiness Closed",
+  "exception_5":"Incorrect Address",
+  "exception_6":"Shipment Refused By Recipient",
+  "exception_7":"Package Damaged",
+  "exception_8":"Customer Security Delay",
+
+  "status":"On Time",
+  "delivered":1479,
+  "delivery_percentage":60,
+  "total_packages":2465,
+  "packages_on_time":1405,
+  "on_time_percentage":95,
+  "on_time_total":57,
+  "exception_percentage":10,
+
+  "couriers_on_time_today":80,
+  "delays_today":"Moderate",
+  "couriers_on_time_week":90,
+  "packages_on_time_week":95,
+  "exceptions_week":5,
+  "delays_week":"Minimal",
+  "packages_late_1":98,
+  "packages_late_2":111,
+  "packages_late_3":133,
+  "packages_late_4":145,
+  "packages_late_5":176,
+  "packages_late_6":70,
+  "packages_late_7":74,
+
+  "couriers":[
+    {
+      "ID":"N4LKNI2ON3",
+      "status":"img/red.jpg",
+      "exceptions":20,
+      "details":"Delayed in traffic for 1 hour."
+    },
+    {
+      "ID":"JOE93NLKND",
+      "status":"img/red.jpg",
+      "exceptions":17,
+      "details":"Construction delay for 3/4 hour."
+    },
+    {
+      "ID":"3LAKN3OIN5",
+      "status":"img/yellow.jpg",
+      "exceptions":10,
+      "details":"elayed in traffic for 1/2 hour."
+    },
+    {
+      "ID":"DNEK406NEK",
+      "status":"img/green.jpg",
+      "exceptions":7,
+      "details":"7 people did not answer the door."
+    },
+    {
+      "ID":"EN40GL3NR9",
+      "status":"img/green.jpg",
+      "exceptions":7,
+      "details":"Wrong addresses."
+    },
+    {
+      "ID":"DNEK405KRN",
+      "status":"img/red.jpg",
+      "exceptions":5,
+      "details":"Delayed in traffic for 1/2 hour."
+    },
+    {
+      "ID":"49GN5D0SLL",
+      "status":"img/green.jpg",
+      "exceptions":5,
+      "details":"Wrong addresses."
+    },
+    {
+      "ID":"LEID3LK000",
+      "status":"img/green.jpg",
+      "exceptions":5,
+      "details":"5 people did not answer the door."
+    },
+    {
+      "ID":"ENKRO403N2",
+      "status":"img/yellow.jpg",
+      "exceptions":5,
+      "details":"Package drop took longer then expected."
+    },
+    {
+      "ID":"N4LKNI2ON3",
+      "status":"img/yellow.jpg",
+      "exceptions":4,
+      "details":"Delayed in traffic for 1/2 hour."
+    },
+    {
+      "ID":"DNE03L2N3K",
+      "status":"img/green.jpg",
+      "exceptions":3,
+      "details":"3 damaged packages."
+    },
+    {
+      "ID":"000DLFOEND",
+      "status":"img/green.jpg",
+      "exceptions":2,
+      "details":"A bussiness was closed."
+    },
+    {
+      "ID":"1X0C9V898D",
+      "status":"img/yellow.jpg",
+      "exceptions":1,
+      "details":"Shipment was refused."
+    },
+    {
+      "ID":"BNOE3DNE33",
+      "status":"img/green.jpg",
+      "exceptions":1,
+      "details":"Package sorted to wrong route."
+    },
+    {
+      "ID":"3NMDO30CNC",
+      "status":"img/green.jpg",
+      "exceptions":0,
+      "details":"Ahead of schedule."
+    },
+    {
+      "ID":"2ZXLWODNED",
+      "status":"img/green.jpg",
+      "exceptions":0,
+      "details":"Ahead of schedule."
+    },
+    {
+      "ID":"ALK39DNE33",
+      "status":"img/green.jpg",
+      "exceptions":0,
+      "details":"Ahead of schedule."
+    },
+    {
+      "ID":"3CNXM3NMDO",
+      "status":"img/green.jpg",
+      "exceptions":0,
+      "details":"Ahead of schedule."
+    }
+  ]
+}

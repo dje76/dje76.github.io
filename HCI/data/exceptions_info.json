@@ -1,0 +1,11 @@
+{
+  "incorrect_address":20,
+  "late_package":74,
+  "package_lost":10,
+  "bussiness_closed":30,
+  "no_payment":40,
+  "package_damaged":10,
+  "security_delay":5,
+  "shipment_refused":20,
+  "wrong_route":37
+}

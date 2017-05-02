@@ -1,0 +1,63 @@
+<div>
+  <h2 class="text-center">Progress</h2>
+
+  <div class="progress">
+    <div class="progress-bar progress-bar-warning" role="progressbar" style="width:{{data.exception_percentage}}%">
+    </div>
+    <div class="progress-bar progress-bar-success" role="progressbar" style="width:{{data.on_time_total}}%">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <br/>
+      <h1>{{data.status}}</h1>
+      <br/>
+      <br/>
+      <br/>
+      <h3>Packages Delivered</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4 text-center">
+      <h3>{{data.delivery_percentage}}%</h3>
+    </div>
+    <div class="col-lg-4 col-lg-offset-4 text-center">
+      <h3>{{data.delivered}}/{{data.total_packages}}</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <br/>
+      <br/>
+      <h3>Packages On Time</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4 text-center">
+      <h3>{{data.on_time_percentage}}%</h3>
+    </div>
+    <div class="col-lg-4 col-lg-offset-4 text-center">
+      <h3>{{data.packages_on_time}}/{{data.delivered}}</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <br/>
+      <h3>Biggest Exception Groups</h3>
+      <br/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <h4>{{data.exception_1}}: {{data.exception_no_1}}</h4>
+      <h4>{{data.exception_2}}: {{data.exception_no_2}}</h4>
+      <h4>{{data.exception_3}}: {{data.exception_no_3}}</h4>
+    </div>
+    <div class="col-lg-6">
+      <h4>{{data.exception_4}}: {{data.exception_no_4}}</h4>
+      <h4>{{data.exception_5}}: {{data.exception_no_5}}</h4>
+      <h4>{{data.exception_6}}: {{data.exception_no_6}}</h4>
+    </div>
+  </div>
+</div>

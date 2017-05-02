@@ -1,0 +1,19 @@
+<div>
+  <h2>Couriers</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Courier ID</th>
+        <th>Status</th>
+        <th># Exceptions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="item in data.couriers|limitTo:7">
+        <td>{{item.ID}}</td>
+        <td><img src="{{item.status}}" class="status"/></td>
+        <td>{{item.exceptions}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
