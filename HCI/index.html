@@ -6,30 +6,30 @@
 		<title>Courier Dashboard</title>
 
 		<!-- CSS -->
-		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="vendor/bootstrap/CSS/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="CSS/dashboard.css" />
 	</head>
 
 	<body ng-app="myApp">
 		<div ng-controller="mainController">
 			<div class="row">
-				<div class="col-lg-6">
+				<div class="col-lg-6 col-sm-6 col_md-6">
 					<div ng-include="main"></div>
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-6 col-sm-6 col_md-6">
 					<div class="row">
-						<div class="col-lg-6 text-center">
+						<div class="col-lg-6 col-sm-6 col_md-6 text-center">
 							<div ng-include="one"></div>
 						</div>
-						<div class="col-lg-6 text-center">
+						<div class="col-lg-6 col-sm-6 col_md-6 text-center">
 							<div ng-include="two"></div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-lg-6 text-center">
+						<div class="col-lg-6 col-sm-6 col_md-6 text-center">
 							<div ng-include="four"></div>
 						</div>
-						<div class="col-lg-6 text-center">
+						<div class="col-lg-6 col-sm-6 col_md-6 text-center">
 							<div ng-include="three"></div>
 						</div>
 					</div>
@@ -49,7 +49,6 @@
 		<script type="text/javascript" src="vendor/angular-animate.min.js"></script>
 		<!-- Modules -->
 		<script src="JS/app.js"></script>
-
     <!-- Controllers -->
     <script src="JS/mainController.js"></script>
 
