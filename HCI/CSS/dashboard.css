@@ -43,10 +43,32 @@
 	margin-top: 14px;
 }
 .smaller{
-	font-size: 11px;
+	font-size: 1.5vh;
 	padding-right: 0px;
 	padding-left: 2px;
 }
 .small{
 	margin-top: 2px;
+}
+h1{
+	font-size: 4.5vh;
+}
+h2{
+	font-size: 3.5vh;
+}
+h3{
+	font-size: 2.9vh;
+}
+h4{
+	font-size: 2.2vh;
+}
+h5{
+
+}
+body{
+	font-size: 1.6vh;
+}
+br {
+	display: block;
+  margin: 3vh;
 }
