@@ -1,0 +1,135 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="asl.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="asl.js"></script>
+    <title>ASL Flashcards</title>
+  </head>
+  <body>
+    <div class="container">
+      <br/>
+      <div id="backButtonSection" ><button id="backButton" class="btn btn-primary" type="button">Back</button></div>
+      <div id="helpButtonSection" ><a id="showHelp"><i class="far fa-question-circle"></i></a></div>
+      <br/>
+      <div class="jumbotron" id="landingSection">
+        <h1>ASL Search and Flashcard Maker</h1>
+        <div class="row">
+          <div class="col-lg-2 offset-lg-4 col-sm-6 col-xm-6 col-md-6">
+            <button id="SearchNavButton" class="btn btn-primary" type="button">Search</button>
+          </div>
+          <div class="col-lg-2 col-sm-6 col-xm-6 col-md-6">
+            <button id="FlashNavButton" class="btn btn-primary" type="button">Make Flashcards</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="jumbotron" id="searchSection">
+        <h3>Search for words then hit the play button to see the ASL sign</h3>
+        <input id="searchTxt" class="form-control" />
+        <button id="SearchButton" class="btn btn-primary" type="button">Search</button>
+        <div id="optionsList"></div>
+        <div id="vidSection">
+          <div id="vidDiv"></div>
+          <div id="videoError">Could not load or find video</div>
+          <button id="playButton" class="btn btn-primary" type="button">Play</button>
+        </div>
+      </div>
+
+      <div class="jumbotron" id="flashSection">
+        <h3>Start searching words or upload a flashcard set</h3>
+        <div class="row">
+          <div class="col-lg-4 offset-lg-1 col-sm-6 col-xm-6 col-md-6">
+            <input id="flashSearchTxt" class="form-control" />
+            <button id="flashSearchButton" class="btn btn-primary" type="button">Add</button>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-xm-6 col-md-6">
+            <form>
+              <div class="form-group">
+                <label for="fileUpload">Upload flashcard file</label>
+                <input type="file" class="form-control-file" id="fileUpload">
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xm-6 col-md-6" style="text-align: left;">
+            <form>
+              <div class="form-group">
+                <button id="SaveDeckToFile" class="btn btn-primary" type="button">Save Deck</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-sm-12 col-xm-12 col-md-12">
+            <div id="noVideoError">Word added but could not find video for this word</div>
+            <div id="flashOptionsList"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 offset-lg-3 col-sm-6 col-xm-6 col-md-6">
+            <label id="lblShowVideo">Always show answer</label>
+            <label class="switch" id="showVideoSwitch">
+              <input id="showVideochk" type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-xm-6 col-md-6" style="text-align: left;">
+            <form>
+              <div class="form-group">
+                <button id="finishDeck" class="btn btn-primary" type="button">Start</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <br/>
+      <div id="wordList">
+
+      </div>
+      <div class="row">
+        <div class="col-lg-4 offset-lg-4 col-sm-6 col-xm-12 col-md-6" style="text-align: center;">
+          <div class="card" id="flashcard" style="width: 323px;">
+            <div class="card-img-top" id="flashVid">
+            <video id="flashAslVid" width="320" height="240"></video>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title" id="WordHeader" style="text-align: center"></h4>
+              <div style="text-align: center">
+                <button id="showVideo" type="button" class="btn btn-outline-secondary btn-sm">Show Video</button>
+              </div>
+              <div style="text-align: center;">
+                <button id="flashPlayButton" type="button" class="btn btn-outline-secondary btn-sm">Play</button>
+              </div>
+              <br/>
+              <h4 class="card-title" id="WordFooter" style="text-align: center">
+                <a href="#" class="card-link" id="previousCard"><i class="fas fa-arrow-left" style="vertical-align: top;margin-top:  1px;"></i></a>
+                <i class="fas fa-circle" style="font-size: 7px;vertical-align: super;color: #b9b9b9;"></i>
+                <a href="#" class="card-link" id="nextCard"><i class="fas fa-arrow-right" style="vertical-align: top;margin-top:  1px;"></i></a>
+              </h4>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="erorrs"></div>
+    </div>
+    <div class="modal" tabindex="-1" role="dialog" id="helpModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Help</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p id="helpText"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
