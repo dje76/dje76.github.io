@@ -148,7 +148,7 @@ $(document).ready(function(){
 
   window.resultChosen = function(url){
     $("#optionsList").hide();
-    $.getJSON('http://anyorigin.com/go?url=signingsavvy.com/sign/' + url + '&callback=?', function(data) {
+    $.getJSON('https://anyorigin.com/go?url=signingsavvy.com/sign/' + url + '&callback=?', function(data) {
       var re = /mp4/g;
       var indexes = [];
       while ((match = re.exec(data.contents)) != null) {
@@ -168,7 +168,7 @@ $(document).ready(function(){
     $("#optionsList").hide();
     $("#videoError").hide();
     var lookupWord = $("#searchTxt").val();
-    $.getJSON('http://anyorigin.com/go?url=signingsavvy.com/sign/' + lookupWord + '&callback=?', function(data) {
+    $.getJSON('https://anyorigin.com/go?url=signingsavvy.com/sign/' + lookupWord + '&callback=?', function(data) {
       var re = /mp4/g;
       var indexes = [];
       while ((match = re.exec(data.contents)) != null) {
@@ -222,7 +222,7 @@ $(document).ready(function(){
   window.flashResultChosen = function(url){
     $("#flashOptionsList").hide();
     var lookupWord = $("#flashSearchTxt").val();
-    $.getJSON('http://anyorigin.com/go?url=signingsavvy.com/sign/' + url + '&callback=?', function(data) {
+    $.getJSON('https://anyorigin.com/go?url=signingsavvy.com/sign/' + url + '&callback=?', function(data) {
       var re = /mp4/g;
       var indexes = [];
       while ((match = re.exec(data.contents)) != null) {
@@ -248,7 +248,7 @@ $(document).ready(function(){
     $("#flashOptionsList").hide();
     $("#noVideoError").hide();
     var lookupWord = $("#flashSearchTxt").val();
-    $.getJSON('http://anyorigin.com/go?url=signingsavvy.com/sign/' + lookupWord + '&callback=?', function(data) {
+    $.getJSON('https://anyorigin.com/go?url=signingsavvy.com/sign/' + lookupWord + '&callback=?', function(data) {
       var re = /mp4/g;
       var indexes = [];
       while ((match = re.exec(data.contents)) != null) {
