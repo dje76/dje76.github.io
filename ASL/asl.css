@@ -1,8 +1,15 @@
-a{
+#optionsList div a {
   text-decoration: underline;
   color: blue;
   cursor: pointer;
 }
+
+#flashOptionsList div a {
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
+
 #searchTxt{
   width: 200px;
   display: inline-block;
@@ -175,4 +182,8 @@ body {
 
 #helpButtonSection:hover{
   color: #0069d9;
+}
+
+#premadeFlashcards{
+  display: none;
 }

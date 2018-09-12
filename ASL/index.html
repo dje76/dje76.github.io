@@ -17,11 +17,14 @@
       <div class="jumbotron" id="landingSection">
         <h1>ASL Search and Flashcard Maker</h1>
         <div class="row">
-          <div class="col-lg-2 offset-lg-4 col-sm-6 col-xm-6 col-md-6">
+          <div class="col-lg-2 offset-lg-3 col-md-4" style="margin-bottom: 5px;">
             <button id="SearchNavButton" class="btn btn-primary" type="button">Search</button>
           </div>
-          <div class="col-lg-2 col-sm-6 col-xm-6 col-md-6">
+          <div class="col-lg-2 col-md-4" style="margin-bottom: 5px;">
             <button id="FlashNavButton" class="btn btn-primary" type="button">Make Flashcards</button>
+          </div>
+          <div class="col-lg-2 col-md-4" style="margin-bottom: 5px;">
+            <button id="PreFlashNavButton" class="btn btn-primary" type="button">Pre-Made Flashcards</button>
           </div>
         </div>
       </div>
@@ -84,13 +87,51 @@
           </div>
         </div>
       </div>
+      <div class="jumbotron" id="premadeFlashcards">
+        <h1>Flashcard Decks</h1>
+        <div class="row">
+          <div class="col-lg-4 col-md-4" style="margin-bottom: 10px;">
+            <button id="SearchNavButton" class="btn btn-primary" type="button" onclick="window.useExistingFlashcards('people.txt');">Week 3: People</button>
+          </div>
+          <div class="col-lg-4 col-md-4" style="margin-bottom: 10px;">
+            <button id="FlashNavButton" class="btn btn-primary" type="button">Week 3: Places</button>
+          </div>
+          <div class="col-lg-4 col-md-4" style="margin-bottom: 10px;">
+            <button id="PreFlashNavButton" class="btn btn-primary" type="button">Week 3: Time</button>
+          </div>
+          <div class="col-lg-4 col-md-4" style="margin-bottom: 10px;">
+            <button id="SearchNavButton" class="btn btn-primary" type="button">Week 4: Days of Week, Months, and Seasons</button>
+          </div>
+          <div class="col-lg-4 col-md-4" style="margin-bottom: 10px;">
+            <button id="FlashNavButton" class="btn btn-primary" type="button">Week 4: Greetings</button>
+          </div>
+          <div class="col-lg-4 col-md-4" style="margin-bottom: 10px;">
+            <button id="PreFlashNavButton" class="btn btn-primary" type="button">Week 5: Colors</button>
+          </div>
+          <div class="col-lg-4 col-md-4" style="margin-bottom: 10px;">
+            <button id="SearchNavButton" class="btn btn-primary" type="button">Week 5: Interacting With Deaf People</button>
+          </div>
+          <div class="col-lg-4 col-md-4" style="margin-bottom: 10px;">
+            <button id="FlashNavButton" class="btn btn-primary" type="button">Week 5: Clothing</button>
+          </div>
+          <div class="col-lg-4 col-md-4" style="margin-bottom: 10px;">
+            <button id="PreFlashNavButton" class="btn btn-primary" type="button">Week 6: Emotions</button>
+          </div>
+          <div class="col-lg-4 col-md-4" style="margin-bottom: 10px;">
+            <button id="SearchNavButton" class="btn btn-primary" type="button">Week 6: Pronowns</button>
+          </div>
+          <div class="col-lg-4 col-md-4" style="margin-bottom: 10px;">
+            <button id="FlashNavButton" class="btn btn-primary" type="button">Week 6: Food</button>
+          </div>
+        </div>
+      </div>
 
       <br/>
       <div id="wordList">
 
       </div>
       <div class="row">
-        <div class="col-lg-4 offset-lg-4 col-sm-6 col-xm-12 col-md-6" style="text-align: center;">
+        <div class="col-lg-4 offset-lg-4 col-sm-12 col-xm-12 col-md-12" style="text-align: center;">
           <div class="card" id="flashcard" style="width: 323px;">
             <div class="card-img-top" id="flashVid">
             <video id="flashAslVid" width="320" height="240"></video>

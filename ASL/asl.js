@@ -57,9 +57,17 @@ $(document).ready(function(){
     }
   });
 
+  $("#PreFlashNavButton").click(function() {
+    $("#flashSection").hide();
+    $("#landingSection").hide();
+    $("#premadeFlashcards").show();
+    $("#backButtonSection").css("visibility", "visible");
+  });
+
   $("#backButton").click(function() {
     $("#flashSection").hide();
     $("#searchSection").hide();
+    $("#premadeFlashcards").hide();
     $("#backButtonSection").css("visibility", "hidden");
     $("#landingSection").show();
     $("#flashcard").hide();
@@ -381,6 +389,23 @@ $(document).ready(function(){
       $("#flashPlayButton").hide();
       $("#showVideo").text("Show Video");
     }
+  }
+
+  window.useExistingFlashcards = function(file) {
+    $.get("flashcardSets/" + file, function(data){
+      window.flashcardDeck = JSON.parse(data);
+      $("#premadeFlashcards").hide();
+      $("#searchSection").hide();
+      $("#backButtonSection").css("visibility", "visible");
+      $("#landingSection").hide();
+      $("#wordList").hide();
+      $("#flashcard").css("display", "inline-block");
+
+      window.flashcardDeck.cards = window.shuffle(window.flashcardDeck.cards);
+      window.flashIndex = 0;
+      $("#showVideo").hide();
+      window.updateCard();
+    });
   }
 
   document.getElementById('fileUpload').addEventListener('change', window.handleFileSelect, false);
